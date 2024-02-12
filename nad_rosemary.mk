@@ -24,6 +24,12 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Inherit some common Nusantara-OS stuff.
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
+# Nad Config
+TARGET_USES_BLUR := true
+USE_GAPPS ?= true
+USE_PIXEL_CHARGING := true
+#TARGET_GAPPS_ARCH := arm64
+
 # Boot animation res
 TARGET_BOOT_ANIMATION_RES := 1080
 
